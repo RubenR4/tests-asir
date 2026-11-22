@@ -1,0 +1,13 @@
+# Tests ASIR para iPhone (PWA)
+
+## Publicar gratis con GitHub Pages
+1. Crea en GitHub un repositorio nuevo (por ejemplo `tests-asir`). Elige **Public** si vas a usar GitHub Pages gratis en un repositorio personal.
+2. Sube **los cinco archivos de esta carpeta a la raíz del repositorio**: `index.html`, `manifest.webmanifest`, `sw.js`, `icon-192.png`, `icon-512.png`.
+3. En **Settings → Pages → Build and deployment**, selecciona **Deploy from a branch** y la rama **main / (root)**. Guarda.
+4. Cuando GitHub Pages termine de publicar, abre la URL indicada en **Settings → Pages** (normalmente `https://TUUSUARIO.github.io/tests-asir/`).
+5. En el iPhone, abre esa URL con **Safari → Compartir → Añadir a pantalla de inicio → Añadir**.
+6. Abre la app una primera vez con Internet para que se registre el caché offline. Una vez instalado el service worker y cargado el sitio, los tests pueden funcionar sin conexión.
+
+**Notas:** el banco de preguntas y respuestas es exactamente el del archivo facilitado; no se han auditado académicamente las soluciones. Chart.js, fuentes y confetti se importan por CDN: fuera de línea pueden faltar las gráficas, la tipografía externa y las animaciones, pero las preguntas siguen dentro de `index.html`. El progreso se guarda por dispositivo y origen; no se sincroniza con WhatsApp o con archivos locales, y puede perderse al borrar datos del sitio.
+
+**Privacidad:** GitHub Pages en repositorio público deja visible el código y banco de preguntas. No publiques nada confidencial ni material sin permiso para compartirlo.
